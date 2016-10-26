@@ -1,0 +1,26 @@
+1. Run SparseMatrixGenerator.py, which generates following files
+	a. name_id_map_features.txt (while create feature matrix, featureNames replaced with featureId)
+	b. train_emailId_to_Sno_label.pkl (for predicting top 50 spam documents, based on the score after liblinear-predict cmd)
+	c. test_emailId_to_Sno_label.pkl (NA)
+	d. train_matrix.txt (Training Feature Matrix)
+	e. test_matrix.txt (Testing Feature Matrix)
+
+2. Copy 1.d and 1.e filed to the linux machine.
+
+3. Got to ubuntuvikas@ubuntu:/usr/lib$ 
+	3.a Run following command to train liblinear model. It will generate 'model.txt' file (used to generate top 50 Spam terms)
+		 liblinear-train -s 0 /home/ubuntuvikas/IR/train_matrix.txt /home/ubuntuvikas/IR/model.txt
+	3.b Run following command for prediction. It will generate 'test_data_predicted.txt' file (used to generate top 50 Spam documents)
+		 liblinear-predict -b 1 /home/ubuntuvikas/IR/test_matrix.txt /home/ubuntuvikas/IR/model.txt /home/ubuntuvikas/IR/test_data_predicted.txt 
+
+Accuracy = 99.0496% (18655/18834)
+
+4. Paste file generated in 3.a and 3.b to 'HW7\output\AllUnigramsAsFeatures\final' directory.
+
+5. Run 'Top50SpamDocGenerator' script. 
+	5.a It will generate 'top_50_span_emails.txt' file. 
+	5.b Gives accuracy for top 50 spam documents
+
+6. Run 'Top50SpamTermsGenerator' script.
+	6.a Dump 'top_50_span_emails.txt' to 'HW7\output\AllUnigramsAsFeatures\final' directory.
+

@@ -1,0 +1,7 @@
+Model				AveragePrecision
+
+Okapi TF 			0.1441
+TF-IDF          		0.1873
+Okapi BM25      		0.2348
+Laplace smoothing 		0.1999
+Jelinek-Mercer smoothing	0.2041

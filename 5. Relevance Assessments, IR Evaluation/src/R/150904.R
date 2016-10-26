@@ -1,0 +1,6 @@
+print("Hello World!")
+png("C:\\Users\\vikas\\Dropbox\\CS6200_V_Sangwan\\HW5\\output\\HW1\\150904.png", width=7, height=10, units="in", res=300)
+Recall <- read.csv(file="C:\\Users\\vikas\\Dropbox\\CS6200_V_Sangwan\\HW5\\output\\HW1\\150904.csv",sep=",",head=TRUE)
+Precision <- read.csv(file="C:\\Users\\vikas\\Dropbox\\CS6200_V_Sangwan\\HW5\\output\\HW1\\150904.csv",sep=",",head=TRUE)
+plot(Recall$Recall, Precision$Precision, type="o", col="blue")
+dev.off()

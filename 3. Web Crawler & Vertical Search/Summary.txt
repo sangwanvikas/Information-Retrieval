@@ -1,0 +1,22 @@
+Your seed urls i.e. urls in your first frontier
+
+	"http://en.wikipedia.org/wiki/sino-soviet_split",
+	"https://www.marxists.org/history/international/comintern/sino-soviet-split/",
+	"http://www.gilderlehrman.org/history-by-era/seventies/essays/united-states-and-china-during-cold-war", 
+	"http://www.atomicarchive.com/History/coldwar/"
+
+-----------------------------------------------------------------------------------------------------------
+Count of unique urls crawled individually - 22,049
+-----------------------------------------------------------------------------------------------------------
+Time take to crawl - 7 hours 45 minutes
+-----------------------------------------------------------------------------------------------------------
+Total disk space size of your crawl or ES index size if applicable for Individual crawl
+Total Disk space of my individual crawl - 2.91 GB
+-----------------------------------------------------------------------------------------------------------
+Time taken to merge
+Total time taken to merge 5-6 hours 
+-----------------------------------------------------------------------------------------------------------
+Count of unique urls in Merged Index - 59118
+-----------------------------------------------------------------------------------------------------------
+Merged ES index size - 7.9 gb
+-----------------------------------------------------------------------------------------------------------

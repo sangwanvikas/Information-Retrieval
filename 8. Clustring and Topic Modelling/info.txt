@@ -1,0 +1,2 @@
+1. Run document parser to index documents on ES
+2. Run QueryDocumentProcessor to generate document-term matrix. before that merge qid to docIds from bm25 and qrel files.
